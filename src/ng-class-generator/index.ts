@@ -1,10 +1,23 @@
-import { Rule, SchematicContext, Tree } from '@angular-devkit/schematics';
+import { strings } from '@angular-devkit/core';
+import {
+  Rule,
+  SchematicContext,
+  apply,
+  mergeWith,
+  template,
+  url
+} from '@angular-devkit/schematics';
 
-
-// You don't have to export the function as default. You can also have more than one rule factory
-// per file.
 export function ngClassGenerator(_options: any): Rule {
-  return (tree: Tree, _context: SchematicContext) => {
-    return tree;
+  return (_, _context: SchematicContext) => {
+    return mergeWith(
+      apply(url('./files'), [
+        template({
+          ...strings,
+          name: _options.name,
+          type: _options.type
+        })
+      ])
+    );
   };
 }
