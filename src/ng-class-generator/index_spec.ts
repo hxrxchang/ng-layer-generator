@@ -6,10 +6,10 @@ import * as path from 'path';
 const collectionPath = path.join(__dirname, '../collection.json');
 
 
-describe('ng-class-generator', () => {
+describe('ng-layer-generator', () => {
   it('works', () => {
     const runner = new SchematicTestRunner('schematics', collectionPath);
-    const tree = runner.runSchematic('ng-class-generator', {}, Tree.empty());
+    const tree = runner.runSchematic('ng-layer-generator', {}, Tree.empty());
 
     expect(tree.files).toEqual([]);
   });

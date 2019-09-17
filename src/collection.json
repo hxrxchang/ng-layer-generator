@@ -1,9 +1,9 @@
 {
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
-    "ng-class-generator": {
+    "ng-layer-generator": {
       "description": "A blank schematic.",
-      "factory": "./ng-class-generator/index#ngClassGenerator"
+      "factory": "./ng-layer-generator/index#ngLayerGenerator"
     }
   }
 }

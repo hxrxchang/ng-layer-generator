@@ -8,7 +8,7 @@ import {
   url
 } from '@angular-devkit/schematics';
 
-export function ngClassGenerator(_options: any): Rule {
+export function ngLayerGenerator(_options: any): Rule {
   return (_, _context: SchematicContext) => {
     return mergeWith(
       apply(url('./files'), [
