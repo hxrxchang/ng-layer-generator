@@ -1,10 +1,13 @@
 {
   "name": "ng-layer-generator",
-  "version": "0.0.4",
+  "version": "0.0.12",
   "description": "A blank schematics",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && jasmine src/**/*_spec.js"
+  },
+  "bin": {
+    "ng-lg": "./bin/ng-lg.js"
   },
   "keywords": [
     "schematics"

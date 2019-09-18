@@ -9,9 +9,10 @@ import {
   move
 } from '@angular-devkit/schematics';
 
+const basePath = '/src/app';
+
 export function ngLayerGenerator(_options: any): Rule {
   return (_, _context: SchematicContext) => {
-    const path = '/src/app';
     return mergeWith(
       apply(url('./files'), [
         template({
@@ -19,8 +20,12 @@ export function ngLayerGenerator(_options: any): Rule {
           name: _options.name,
           type: _options.type
         }),
-        move(path)
+        move(generatePath())
       ])
     );
   };
+}
+
+function generatePath(): string {
+  return basePath;
 }
