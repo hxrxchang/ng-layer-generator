@@ -6,7 +6,7 @@ describe('<%= classify(name) %><%= classify(type) %>', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const <%= name %><%= classify(type) %>: <%= classify(name) %><%= classify(type) %> = TestBed.get(<%= classify(name) %><%= classify(type) %>);
-    expect(<%= name %><%= classify(type) %>).toBeTruthy();
+    const type: <%= classify(name) %><%= classify(type) %> = TestBed.get(<%= classify(name) %><%= classify(type) %>);
+    expect(type).toBeTruthy();
   });
 });
