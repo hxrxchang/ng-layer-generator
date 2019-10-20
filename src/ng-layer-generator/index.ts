@@ -10,6 +10,7 @@ import {
 } from '@angular-devkit/schematics';
 
 export function ngLayerGenerator(_options: any): Rule {
+  console.log(_options);
   return (_, _context: SchematicContext) => {
     return mergeWith(
       apply(url('./files'), [
