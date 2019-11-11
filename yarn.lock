@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@angular-devkit/core@8.3.4", "@angular-devkit/core@^8.3.4":
+"@angular-devkit/core@8.3.4":
   version "8.3.4"
   resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-8.3.4.tgz#cdd0593ca4dc5eaff2adc77bda9aed1327dbb405"
   integrity sha512-QjUN9EakpQ+sFYeMfBMecxVhgI4Vdg0k20h6PZDjZ9lqYNXjpaQVtBo7qiPYHh5kQeJEvdrzca6yeYuCP3TvZw==
@@ -13,7 +13,7 @@
     rxjs "6.4.0"
     source-map "0.7.3"
 
-"@angular-devkit/schematics-cli@^0.803.4":
+"@angular-devkit/schematics-cli@0.803.4":
   version "0.803.4"
   resolved "https://registry.yarnpkg.com/@angular-devkit/schematics-cli/-/schematics-cli-0.803.4.tgz#2789f40d42479063a1f927cc243d05427a57df47"
   integrity sha512-ChzJhctTnbN6IPhwkke9uy4LlLPdxqbYU+b9J241BwZj9jtxKV3aDL2NGiPsFzr39HHpoJicCtK3P/Yj9Bwk+A==
@@ -26,7 +26,7 @@
     rxjs "6.4.0"
     symbol-observable "1.2.0"
 
-"@angular-devkit/schematics@8.3.4", "@angular-devkit/schematics@^8.3.4":
+"@angular-devkit/schematics@8.3.4":
   version "8.3.4"
   resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-8.3.4.tgz#09735ac05fa23780b0edcbe3ac906892c753daec"
   integrity sha512-+QXhrAEcReQJL4fn+35NbcdW5d1vawqSZUokqga8E971YUVUk55mHpIQ39Vpj3S9jhTRYwxsHl+7v9N7UaREmg==
@@ -42,12 +42,12 @@
     "@angular-devkit/core" "8.3.4"
     "@angular-devkit/schematics" "8.3.4"
 
-"@types/jasmine@^3.3.9":
+"@types/jasmine@3.4.0":
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-3.4.0.tgz#018c56db42400c092aae47de21f710b7f04e4b06"
   integrity sha512-6pUnBg6DuSB55xnxJ5+gW9JOkFrPsXkYAuqqEE8oyrpgDiPQ+TZ+1Zt4S+CHcRJcxyNYXeIXG4vHSzdF6y9Uvw==
 
-"@types/node@^8.0.31":
+"@types/node@8.10.54":
   version "8.10.54"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.10.54.tgz#1c88eb253ac1210f1a5876953fb70f7cc4928402"
   integrity sha512-kaYyLYf6ICn6/isAyD4K1MyWWd5Q3JgH6bnMN089LUx88+s4W8GvK9Q6JMBVu5vsFFp7pMdSxdKmlBXwH/VFRg==
@@ -249,7 +249,7 @@ jasmine-core@~3.4.0:
   resolved "https://registry.yarnpkg.com/jasmine-core/-/jasmine-core-3.4.0.tgz#2a74618e966026530c3518f03e9f845d26473ce3"
   integrity sha512-HU/YxV4i6GcmiH4duATwAbJQMlE0MsDIR5XmSVxURxKHn3aGAdbY1/ZJFmVRbKtnLwIxxMJD7gYaPsypcbYimg==
 
-jasmine@^3.3.1:
+jasmine@3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/jasmine/-/jasmine-3.4.0.tgz#0fa68903ff0c9697459cd044b44f4dcef5ec8bdc"
   integrity sha512-sR9b4n+fnBFDEd7VS2el2DeHgKcPiMVn44rtKFumq9q7P/t8WrxsVIZPob4UDdgcDNCwyDqwxCt4k9TDRmjPoQ==
@@ -424,7 +424,7 @@ type-fest@^0.5.2:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.5.2.tgz#d6ef42a0356c6cd45f49485c3b6281fc148e48a2"
   integrity sha512-DWkS49EQKVX//Tbupb9TFa19c7+MK1XmzkrZUR8TAktmE/DizXoaoJV6TZ/tSIPXipqNiRI6CyAe7x69Jb6RSw==
 
-typescript@~3.5.3:
+typescript@3.5.3:
   version "3.5.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.5.3.tgz#c830f657f93f1ea846819e929092f5fe5983e977"
   integrity sha512-ACzBtm/PhXBDId6a6sDJfroT2pOWt/oOnk4/dElG5G33ZL776N3Y6/6bKZJBFpd+b05F3Ct9qDjMeJmRWtE2/g==
