@@ -1,6 +1,6 @@
 {
   "name": "ng-layer-generator",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "A blank schematics",
   "scripts": {
     "build": "tsc -p tsconfig.json",
