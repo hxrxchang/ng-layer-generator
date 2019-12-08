@@ -1,28 +1,79 @@
-# Getting Started With Schematics
+# ng-layer-generator
 
-This repository is a basic Schematic implementation that serves as a starting point to create and publish Schematics to NPM.
+This package is enable you to create files for layered architecture like usecase, query, repository and so on when developing Angular application.  
+Files made by this package have same construction as service which is made by `ng generate service`, so they are injectable by any components or classes.  
+This package is made with [Schmatics](https://angular.io/guide/schematics).
 
-### Testing
+## Install
 
-To test locally, install `@angular-devkit/schematics-cli` globally and use the `schematics` command line tool. That tool acts the same as the `generate` command of the Angular CLI, but also has a debug mode.
+if you use npm
 
-Check the documentation with
-```bash
-schematics --help
+```
+npm i ng-layer-generator --save-dev
 ```
 
-### Unit Testing
+if you use yarn
 
-`npm run test` will run the unit tests, using Jasmine as a runner and test framework.
-
-### Publishing
-
-To publish, simply do:
-
-```bash
-npm run build
-npm publish
+```
+yarn add ng-layer-generator -D
 ```
 
-That's it!
- 
+of course, you can use via `npx`.
+
+## Usage
+
+if you installed package
+
+```
+ng-lg --name=sample --type=usecase --path=usecases
+```
+
+or use npx
+
+```
+npx ng-layer-generator ng-lg --name=sample --type=usecase --path=usecases
+```
+
+then, `/src/app/usecases/sample.usecase.spec.ts` and `/src/app/usecases/sample.usecase.ts` are created.
+
+file's contents are as follows.
+
+```
+// /src/app/usecases/sample.usecase.ts
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class SampleUsecase {
+  constructor() {}
+}
+```
+
+```
+// /src/app/usecases/sample.usecase.spec.ts
+import { TestBed } from '@angular/core/testing';
+
+import { SampleUsecase } from './sample.usecase';
+
+describe('SampleUsecase', () => {
+  beforeEach(() => TestBed.configureTestingModule({}));
+
+  it('should be created', () => {
+    const type: SampleUsecase = TestBed.get(SampleUsecase);
+    expect(type).toBeTruthy();
+  });
+});
+```
+
+--type option accepts anything.  
+`ng-lg --name=sample --type=query` command makes `/src/app/sample.query.spec.ts` and `/src/app/sample.query.ts`.
+
+### options
+
+| option  | description                                                             | nesessary |
+| ------- | ----------------------------------------------------------------------- | --------- |
+| name    | file and class name                                                     | true      |
+| type    | file and class type (ex. `usecase`, `query`, `repository`, or anything) | true      |
+| path    | path to generate file                                                   | false     |
+| project | which project to generate file (if you use angular multiple projects)   | false     |

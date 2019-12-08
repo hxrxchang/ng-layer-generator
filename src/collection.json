@@ -2,7 +2,7 @@
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
     "ng-layer-generator": {
-      "description": "A blank schematic.",
+      "description": "Schmatic for layered architecture",
       "factory": "./ng-layer-generator/index#ngLayerGenerator"
     }
   }
