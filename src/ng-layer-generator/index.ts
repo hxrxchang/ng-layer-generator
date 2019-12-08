@@ -18,14 +18,14 @@ export function ngLayerGenerator(_options: any): Rule {
           name: _options.name,
           type: _options.type
         }),
-        move(generatePath(_options.path))
+        move(generatePath(_options.path, _options.project))
       ])
     );
   };
 }
 
-function generatePath(path?: string): string {
-  let basePath = '/src/app';
+function generatePath(path?: string, project?: string): string {
+  let basePath = project ? `/projects/${project}/src/app` : '/src/app';
 
   if (path) {
     basePath = `${basePath}/${path}`;
