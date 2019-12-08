@@ -64,4 +64,24 @@ describe('ng-layer-generator', () => {
 
     expect(tree.files).toEqual(expectedOutput);
   });
+
+  it('name is need to specified', () => {
+    const runner = new SchematicTestRunner('schematics', collectionPath);
+    const options = {
+      type: 'usecase'
+    };
+    expect(() => {
+      runner.runSchematic('ng-layer-generator', options, Tree.empty());
+    }).toThrow(new Error('--name is need to specified'));
+  });
+
+  it('type is need to specified', () => {
+    const runner = new SchematicTestRunner('schematics', collectionPath);
+    const options = {
+      name: 'sample'
+    };
+    expect(() => {
+      runner.runSchematic('ng-layer-generator', options, Tree.empty());
+    }).toThrow(new Error('--type is need to specified'));
+  });
 });
