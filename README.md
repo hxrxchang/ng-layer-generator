@@ -18,20 +18,10 @@ if you use yarn
 yarn add ng-layer-generator -D
 ```
 
-of course, you can use via `npx`.
-
 ## Usage
 
-if you installed package
-
 ```
-ng-lg --name=sample --type=usecase --path=usecases
-```
-
-or use npx
-
-```
-npx ng-layer-generator ng-lg --name=sample --type=usecase --path=usecases
+yarn ng-lg --name=sample --type=usecase --path=usecases
 ```
 
 then, `/src/app/usecases/sample.usecase.spec.ts` and `/src/app/usecases/sample.usecase.ts` are created.
