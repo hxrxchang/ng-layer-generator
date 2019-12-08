@@ -23,5 +23,7 @@
     "jasmine": "3.5.0",
     "typescript": "3.5.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@angular-devkit/schematics-cli": "0.803.20"
+  }
 }
