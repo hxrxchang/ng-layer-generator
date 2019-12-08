@@ -1,7 +1,7 @@
 {
   "name": "ng-layer-generator",
   "version": "0.0.19",
-  "description": "A blank schematics",
+  "description": "Schmatic for layered architecture",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && jasmine src/**/*_spec.js"
@@ -12,8 +12,9 @@
   "keywords": [
     "schematics"
   ],
-  "author": "",
+  "author": "hxrxchang",
   "license": "MIT",
+  "repository": "https://github.com/hxrxchang/ng-layer-generator.git",
   "schematics": "./src/collection.json",
   "dependencies": {
     "@angular-devkit/core": "8.3.19",
