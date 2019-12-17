@@ -4,6 +4,8 @@ This package is enable you to create files for layered architecture like usecase
 Files made by this package have same construction as service which is made by `ng generate service`, so they are injectable by any components or classes.  
 This package is made with [Schmatics](https://angular.io/guide/schematics).
 
+<img src="/assets/demo.gif">
+
 ## Install
 
 if you use npm
