@@ -11,12 +11,14 @@ This package is made with [Schmatics](https://angular.io/guide/schematics).
 if you use npm
 
 ```
+npm i @angular-devkit/schematics-cli --save-dev
 npm i ng-layer-generator --save-dev
 ```
 
 if you use yarn
 
 ```
+yarn add @angular-devkit/schematics-cli -D
 yarn add ng-layer-generator -D
 ```
 

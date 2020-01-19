@@ -3,8 +3,7 @@ const util = require('util');
 const readline = require('readline');
 const exec = util.promisify(require('child_process').exec);
 
-let command =
-  'npx @angular-devkit/schematics-cli ng-layer-generator:ng-layer-generator';
+let command = 'schematics ng-layer-generator:ng-layer-generator';
 
 const rl = readline.createInterface({
   input: process.stdin,
