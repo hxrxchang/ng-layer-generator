@@ -23,7 +23,16 @@ yarn add ng-layer-generator -D
 ## Usage
 
 ```
-yarn ng-lg --name=sample --type=usecase --path=usecases
+yarn ng-lg
+```
+
+then start interpreter
+
+```
+Please enter a name: sample
+Please enter a type name(ex: repository, usecase, query and so on): usecase
+Please enter a path name(where to generate file): usecases
+Please enter a project name(which project to generate file): (not necessary)
 ```
 
 then, `/src/app/usecases/sample.usecase.spec.ts` and `/src/app/usecases/sample.usecase.ts` are created.
@@ -58,12 +67,9 @@ describe('SampleUsecase', () => {
 });
 ```
 
---type option accepts anything.  
-`ng-lg --name=sample --type=query` command makes `/src/app/sample.query.spec.ts` and `/src/app/sample.query.ts`.
-
 ### options
 
-| option  | description                                                             | nesessary |
+| option  | description                                                             | necessary |
 | ------- | ----------------------------------------------------------------------- | --------- |
 | name    | file and class name                                                     | true      |
 | type    | file and class type (ex. `usecase`, `query`, `repository`, or anything) | true      |
