@@ -13,7 +13,7 @@ const rl = readline.createInterface({
 // TODO: コールバックどうにかする
 rl.question('Please enter a name: ', name => {
   if (!name) {
-    console.errro('name is need to specified');
+    console.error('name is need to specified');
     rl.close();
     process.exit(1);
   }
