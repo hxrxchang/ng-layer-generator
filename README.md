@@ -8,13 +8,6 @@ This package is made with [Schmatics](https://angular.io/guide/schematics).
 
 ## Install
 
-if you use npm
-
-```
-npm i @angular-devkit/schematics-cli --save-dev
-npm i ng-layer-generator --save-dev
-```
-
 if you use yarn
 
 ```
@@ -22,10 +15,23 @@ yarn add @angular-devkit/schematics-cli -D
 yarn add ng-layer-generator -D
 ```
 
+if you use npm
+
+```
+npm i @angular-devkit/schematics-cli -g
+npm i ng-layer-generator --save-dev -g
+```
+
 ## Usage
 
 ```
 yarn ng-lg
+```
+
+or
+
+```
+ng-lg
 ```
 
 then start interpreter
