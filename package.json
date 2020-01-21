@@ -16,15 +16,14 @@
   "license": "MIT",
   "repository": "https://github.com/hxrxchang/ng-layer-generator.git",
   "schematics": "./src/collection.json",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "@angular-devkit/schematics-cli": "0.803.20",
     "@angular-devkit/core": "8.3.19",
     "@angular-devkit/schematics": "8.3.19",
     "@types/jasmine": "3.5.0",
     "@types/node": "8.10.59",
     "jasmine": "3.5.0",
     "typescript": "3.5.3"
-  },
-  "devDependencies": {
-    "@angular-devkit/schematics-cli": "0.803.20"
   }
 }
