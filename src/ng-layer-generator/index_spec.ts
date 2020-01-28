@@ -1,4 +1,4 @@
-import { Tree } from '@angular-devkit/schematics';
+import { Tree, SchematicsException } from '@angular-devkit/schematics';
 import { SchematicTestRunner } from '@angular-devkit/schematics/testing';
 import * as path from 'path';
 
@@ -72,7 +72,7 @@ describe('ng-layer-generator', () => {
     };
     expect(() => {
       runner.runSchematic('ng-layer-generator', options, Tree.empty());
-    }).toThrow(new Error('--name is need to specified'));
+    }).toThrow(new SchematicsException('Option (name) is required.'));
   });
 
   it('type is need to specified', () => {
@@ -82,6 +82,6 @@ describe('ng-layer-generator', () => {
     };
     expect(() => {
       runner.runSchematic('ng-layer-generator', options, Tree.empty());
-    }).toThrow(new Error('--type is need to specified'));
+    }).toThrow(new SchematicsException('Option (type) is required.'));
   });
 });

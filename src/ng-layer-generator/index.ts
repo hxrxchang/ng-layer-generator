@@ -6,15 +6,16 @@ import {
   mergeWith,
   template,
   url,
-  move
+  move,
+  SchematicsException
 } from '@angular-devkit/schematics';
 
 export function ngLayerGenerator(_options: any): Rule {
   if (!_options.name) {
-    throw new Error('--name is need to specified');
+    throw new SchematicsException('Option (name) is required.');
   }
   if (!_options.type) {
-    throw new Error('--type is need to specified');
+    throw new SchematicsException('Option (type) is required.');
   }
 
   return (_, _context: SchematicContext) => {
