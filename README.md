@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/ng-layer-generator.svg)](https://badge.fury.io/js/ng-layer-generator)
+
 # ng-layer-generator
 
 This package is enable you to create files for layered architecture like usecase, query, repository and so on when developing Angular application.  
