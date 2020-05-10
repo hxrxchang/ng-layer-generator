@@ -1,4 +1,5 @@
 [![npm version](https://badge.fury.io/js/ng-layer-generator.svg)](https://badge.fury.io/js/ng-layer-generator)
+![CI](https://github.com/hxrxchang/ng-layer-generator/workflows/CI/badge.svg)
 
 # ng-layer-generator
 
